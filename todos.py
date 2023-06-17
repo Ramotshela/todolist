@@ -2,6 +2,7 @@ todos= []
 
 while True:
     user=input("enter add,show / remove : ")
+    user.strip()
     
     match user:
         case 'add':
@@ -15,5 +16,7 @@ while True:
             for items in todos:
                 todos.remove(delete)
                 print (items)
-                print(delete' was removed')
+                print(delete + ' was removed')
+        case otherwise:
+            print("inccorect input")
 
